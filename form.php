@@ -27,8 +27,9 @@ if(isset($_POST["Submit"])){
         <label for="Username">Username:</label>
         <input id="Username" type="text" name="Username"><br><br>
         <label for="Password">Password:</label>
+        &nbsp;
         <input id="Password" type="Password" name="Password"><br><br>
-        <input id="Submit" type="Submit" name="Submitted">
+        <input type="Submit" name="Submit" value="Submitted">
     </form>
 </fieldset>
 
