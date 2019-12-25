@@ -1,6 +1,17 @@
 <?php
-$_POST["Username"]; //could also be written like this $Username=$_POST["Username"]
-$_POST["Password"]; //could also be written like this $Password=$_POST["Password"]
+if(isset($_POST["Submit"])){
+    $Username=$_POST["Username"]; //could also be written like this $_POST["Username"]
+    $Password=$_POST["Password"]; //could also be written like this $_POST["Password"]
+    
+    if($Username=="Thatch" && $Password=="Thatchy"){
+        echo "<h2>Welcome : {$_POST["Username"]}</h2>";
+    } else{
+        echo "<h2>Account Doesn't Exist | Try Again</h2>";
+    }
+} else {
+    echo "<h2>Login Required</h2>";
+
+}
 
 ?>
 
@@ -10,16 +21,14 @@ $_POST["Password"]; //could also be written like this $Password=$_POST["Password
         <title>Form</title>
     </head>
     <body>
-<?php ?><br>
 <fieldset>
     <legend>HTML 5 Form</legend>
-    <form action="" method="POST" >
+    <form action="form.php" method="POST" >
         <label for="Username">Username:</label>
-        <input id="Username" type="text" name="Username"><br>
+        <input id="Username" type="text" name="Username"><br><br>
         <label for="Password">Password:</label>
-        &nbsp;
-        <input id="Password" type="Password" name="Password"><br>
-        <input id="Submit" type="Submit" name="Submitted"><br>
+        <input id="Password" type="Password" name="Password"><br><br>
+        <input id="Submit" type="Submit" name="Submitted">
     </form>
 </fieldset>
 
