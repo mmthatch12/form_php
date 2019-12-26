@@ -1,1 +1,16 @@
 Name: /^[A-Za-z. ]*$/
+
+
+Email Validation
+[a-zA-z0-9._]{3,}@[a-zA-z0-9._]{3,}[.]{1}[a-zA-z0-9._]{2,}
+AlexAlex@gmail.com
+Alex_John@yahoo.My.c
+CCS.10.89_@gmail.com.us
+
+url Validation
+(https:|ftp:)\/\/+[a-zA-Z0-9.\-_\/?\$=&\#\~`!]+\.[a-zA-Z0-9.\-_\/?\$=&\#\~`!]*
+https://www.facebook.com/
+https://www.goog.391e.com.pk/webhp?sourceid=chrome-installation=1&espv=2&ie=UTF-8#q=ada
+https://en.wikipedia.org/wiki/Americans_with_Disabilities_Act_of1990
+https://www.udemy.com/build-res~ponsive-Websites-with-html5-and-css3-from-scratch/learn/v4/?couponCode=YOUTUBE50
+https://goo.gl/UTv39Z
