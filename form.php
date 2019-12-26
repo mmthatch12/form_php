@@ -32,6 +32,10 @@ if(isset($_POST["Submit"])){
         <input type="Submit" name="Submit" value="Submitted">
     </form>
 </fieldset>
+<?php 
+echo 'PHP version is: ' . phpversion();
+echo 'PHP version is: ' . PHP_VERSION;
+?>
 
     </body>
 </html>
